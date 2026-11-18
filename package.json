@@ -1,0 +1,55 @@
+{
+  "name": "firefly-iii-mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol (MCP) server for Firefly III personal finance manager — manage accounts, balances, and transactions.",
+  "type": "module",
+  "bin": {
+    "firefly-iii-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "firefly-iii",
+    "personal-finance",
+    "accounting",
+    "bookkeeping"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/edmondxie779/firefly-iii-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edmondxie779/firefly-iii-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edmondxie779/firefly-iii-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  }
+}
