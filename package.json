@@ -34,13 +34,13 @@
     "node": ">=20.0.0"
   },
   "license": "MIT",
-  "homepage": "https://github.com/edmondxie779/firefly-iii-mcp#readme",
+  "homepage": "https://github.com/edmondxie779/firefly-iii-mcp-server#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edmondxie779/firefly-iii-mcp.git"
+    "url": "git+https://github.com/edmondxie779/firefly-iii-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/edmondxie779/firefly-iii-mcp/issues"
+    "url": "https://github.com/edmondxie779/firefly-iii-mcp-server/issues"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
